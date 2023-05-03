@@ -1,0 +1,15 @@
+{% extends 'myapp/base.html' %}
+
+
+{% block body %}
+
+
+<div style="width: 500px; margin-left: 500px; margin-top: 200px; margin-bottom: 30px;">
+    <form method="POST" action="{% url 'change' %}">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button class="btn btn-primary w-100" type="submit">OK</button>
+    </form>
+</div>
+
+{% endblock %}

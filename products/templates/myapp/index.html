@@ -1,0 +1,108 @@
+{% extends 'myapp/base.html' %}
+
+
+
+{% block body %}
+<head>
+
+<style>
+
+.card-body:hover{
+  background-image:conic-gradient(orange,white,green,blue,yellow,pink,tomato);
+  transition: 5s;
+  transform:rotate(360deg);
+  border-radius:20%;
+}
+
+.card-body{
+  cursor: pointer;
+
+}
+.card{
+  border-radius: 20%;
+
+}
+
+</style>
+
+</head>
+
+
+<body
+  style="background-image:url('https://images.pexels.com/photos/1785502/pexels-photo-1785502.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1');background-attachment:fixed; background-size: cover;    background-repeat: no-repeat;" class="data">
+  <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-interval="2000">
+
+        <img src="https://images.pexels.com/photos/6476258/pexels-photo-6476258.jpeg" width="100%"
+          style="background-size:cover" height="800px">
+
+      </div>
+      <div class="carousel-item" data-interval="2000">
+        <img src="https://images.pexels.com/photos/69432/pexels-photo-69432.jpeg" width="100%"
+          style="background-size:cover" height="800px">
+
+
+      </div>
+      <div class="carousel-item" data-interval="2000">
+        <img src="https://images.pexels.com/photos/8296975/pexels-photo-8296975.jpeg" width="100%"
+          style="background-size:cover" height="800px">
+
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+
+  <div class="container" style="margin-top:20px; margin-bottom:20px;">
+    <div class="card-group">
+      <div class="card">
+        <img
+          src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1"
+          width="100%">
+        <div class="card-body">
+          <h5 class="card-title" style="color:rgb(229, 38, 86)">Products Analyse</h5>
+          <p class="card-text" style="color:rgb(36, 36, 232)">In marketing, a product is an object, or system, or
+            service made available for consumer use
+            as of the consumer demand; it is anything that can be offered to a market to satisfy the desire or need of a
+            customer.</p>
+        </div>
+      </div>
+      <div class="card" style="margin-left:25px;">
+        <img
+          src="https://images.pexels.com/photos/6476189/pexels-photo-6476189.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1"
+          width="100%">
+        <div class="card-body">
+          <h5 class="card-title" style="color:rgb(229, 38, 86)">Data Analysis</h5>
+          <p class="card-text" style="color:rgb(36, 36, 232)">Data analysis is a process of inspecting, cleansing,
+            transforming, and modeling data with
+            the goal of discovering useful information, informing conclusions, and supporting decision-making.</p>
+        </div>
+      </div>
+      <div class="card" style="margin-left:25px;">
+        <img
+          src="https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1"
+          width="100%">
+        <div class="card-body">
+          <h5 class="card-title" style="color:rgb(229, 38, 86)">Doctors Appointment</h5>
+          <p class="card-text" style="color:rgb(36, 36, 232)">A physician (American English), medical practitioner
+            (Commonwealth English), medical
+            doctor, or simply doctor, is a health professional who practices</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+
+
+{% endblock %}

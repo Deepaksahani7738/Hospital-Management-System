@@ -1,0 +1,38 @@
+{% extends 'myapp/base.html' %}
+
+
+{% block body %}
+
+
+
+
+<h3 style="text-align:center;color:rgb(179, 248, 51);"><b><marquee direction="left"  behavior="alternate" scrollamount="20" bgcolor="tomato">Products Details</marquee></b></h3>
+<table class="table" border="1">
+    <thead style="color:rgb(73, 51, 238);">
+    <tr>
+        <th scope="col">id</th>
+        <th scope="col">Product Name</th>
+        <th scope="col">Company Name</th>
+        <th scope="col">product image</th>
+        <th scope="col">product price</th>
+        <th scope="col">employee name</th>
+        <th scope="col">employee Email</th>
+      </tr>
+    </thead>
+    {% for post in data %}
+    <tbody>
+      <tr style="color:rgb(237, 46, 49)">
+        <th>{{post.id}}</th>
+        <td><u>{{post.product_name}}</u></td>
+        <td><u>{{post.comapany_name}}</u></td>
+        <td><img src="{{post.product_image.url}}" width="150px" height="120px"></td>
+        <td>{{post.product_price}}</td>
+        <td>{{post.employee}}</td>
+        <td>{{post.employee.email}}</td>
+      </tr>
+    
+    </tbody>
+    {% endfor%}
+  </table>
+
+  {% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'myapp/base.html' %}
+
+
+{% block body %}
+
+
+<h4>you have logged out of the system Successfuly</h4>
+<a href="{% url 'login' %}">click here to logout again!!!</a>
+    <br><br>
+<a href="{% url 'home' %}" class="btn btn-success">Back to Home</a>
+
+{% endblock %}
